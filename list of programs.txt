@@ -1,0 +1,8 @@
+Conda environment
+
+From Github:
+firefly-monkey
+Kilosort
+NPMK
+npy-matlab
+phy
