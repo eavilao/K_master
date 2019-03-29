@@ -126,10 +126,10 @@ for c = 1:numel(clusterIDs)
         fprintf(fid, '\n%f %f\n', [clusterIDs(c) percentViol(counter)]);
         fclose(fid);
     end
-    f = dir('cluster_groups.csv');
-    if isempty(f), fid=fopen('ClustersToCheck', 'at'); fprintf(fid, 'Nothing to check! :-)'); fclose(fid); end 
     
 end
 
+f = dir('ClustersToCheck');
+if isempty(f), fid=fopen('ClustersToCheck', 'at'); fprintf(fid, 'Nothing to check! :-)'); fclose(fid); end
 
 
